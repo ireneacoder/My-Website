@@ -25,7 +25,7 @@ export default function App()
             <div className='space'>
                 <div className='texts' >
                     <div style={{fontSize: '2.125rem' , fontWeight: '500' , color: '#333333'}}> Hello 👋 </div>
-                    <span style={{marginTop: '-0.625rem',fontSize :'3.885rem', color: '#333333', fontWeight: '500'}}>I am <span style={{color : '#4451B1'}}> Prerna Verma </span></span>
+                    <span style={{marginTop: '-0.625rem',fontSize :'3.885rem', color: '#333333', fontWeight: '500'}}>I am <span style={{color : '#4451B1'}} className='name'> Prerna Verma </span></span>
                     <div style={{marginTop: '1rem' , color: '#333333', fontSize: '1.625rem', fontWeight:'350'}}> A digital product designer. I’m passionate to provide great experience to users through my design skills.</div>
                     <a className='download' href={MyResume} download={'Resume'} target='_blank'> Download Resume <span style={{ height: '2rem', borderStyle:'solid', borderWidth:'0.05rem', borderColor:'white', borderTop:'none', borderRight:'none', borderBottom:'none', marginLeft:'1.25rem', paddingLeft:'0.625rem' }}> <FiDownload size={'24'}/></span> </a>
                     
