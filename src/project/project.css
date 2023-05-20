@@ -1,0 +1,21 @@
+.whitediv{
+
+    width: 100%;
+    min-height: 20rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    
+    
+}
+
+.cover{
+    
+    height: 20rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+
+}
+

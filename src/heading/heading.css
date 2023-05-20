@@ -1,0 +1,28 @@
+
+.mainheading:hover .back{
+    transform: scale(0.9);
+    margin-right: 80rem;
+    margin-left: -3rem;
+}
+
+.mainheading:hover .front{
+    transform: scale(1.3);
+    margin-left: 8rem;
+    font-weight: 700;
+}
+
+.back{
+    font-size: 5.625rem; 
+    color: #F4F5FE;
+    font-weight: 800; 
+    user-select: none;
+    transition: all 300ms ease-in-out;
+    width: 100%;
+}
+.front{
+    font-size: 2.375rem; 
+    color: #4451B1;
+    font-weight: 600; 
+    margin-top: -4rem;
+    transition: all 300ms ease-in-out;
+}
