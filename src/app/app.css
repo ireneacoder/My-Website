@@ -1,3 +1,8 @@
+
+*{
+    margin: 0px;
+}
+
 .image{
     background-image: url('../../public/image.png');
     height: 100vh;
@@ -93,27 +98,6 @@
     
 
 }
-.wave{
-
-    animation: waves 3s ease-in-out 0s infinite forwards normal;
-    height: 1rem;
-    width: 1rem;
-
-}
-
-@keyframes waves {
-    0%{
-        transform: rotate(0deg);
-    }
-    50%{
-        transform: rotate(40deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-    
-}
-
 .white{
 
     background-color: #ffffff;
@@ -121,9 +105,8 @@
     margin-left: 18%;
     margin-right: 18%;
     margin-bottom: 8rem;
-    
-
 }
+
 .division{
 
     display: flex;
