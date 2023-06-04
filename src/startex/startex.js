@@ -1,5 +1,3 @@
-
-
 import Table from '../table/table'
 import Banner from '../banner/banner'
 import './startex.css'
@@ -9,7 +7,7 @@ export default function Startex()
 {
     return(
         <div>
-            <div><Banner color='#E1F4FF'img='./startex.png'/></div>
+            <div><Banner color='#E1F4FF'img='./cover (1).png'/></div>
 
             <div>
                 <Table title='Assigned Project (Solo)' role=' UI/UX Designer' duration='1.5 Months' tool=' Figma'/> 
@@ -70,15 +68,14 @@ export default function Startex()
 
                 <div className='headings'> <Heading heading='User Flow'/> </div>
                 <div className='line'>
-                    <div className='row'>
-
-                        <div style={{width:'30rem', padding:'3rem', marginTop:'2rem', marginRight:'4rem'}}>       
+                    <div className='rows'>
+                        <div className='s' >  
                             <p> This was the rough idea I began with, after completing my research. </p>
                             <p> The sections were decided according to the needs of user. Our clients section was important to build the feeling of trust in user . The About Us section showed the brief idea of what the company did. There was a Previous work section, The Process Step section and the Industries in which we had our experience in.</p>
                             <p> It is important for the user to know about the documentation work before-hand so the section of Needed Documents was added.</p>         
                         </div>
 
-                        <div style={{width:'24rem'}}>
+                        <div className='planpic'>
                             <div className='marginbox'> 
                                 <img style={{width:'100%'}} src="./userflow(s).png" alt="Active state for navigation" />
                             </div>
@@ -99,7 +96,7 @@ export default function Startex()
 
 
                  <div className="headings"> <Heading heading='Iterations'/> </div>
-                 <p style={{marginLeft:'12rem'}}>Although some changes were made after the finalization of Wireframe which are as: </p>
+                 <p className='msg'>Although some changes were made after the finalization of Wireframe which are as: </p>
                  <div className='line'>
                     <div className='subsection'> Landing :</div>
                      <p> The most challenging part of this project was designing the Landing page .After doing 6-7 iterations, I finally ended up with this Landing which was voted the highest during the beta design testing. </p>

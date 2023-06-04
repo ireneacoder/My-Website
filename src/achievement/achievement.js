@@ -1,19 +1,34 @@
 import Button from "../button/button";
+import './achievement.css'
+import { useState } from "react";
+import PopupDialog from "../PopupDialog/PopupDialog";
 
-export default function Achievement(props)
-{
-    return(
-        <div style={{ backgroundColor:'#F6F7FF', borderLeft:'0.3rem solid #4451B1', paddingLeft: '2rem', marginTop:'1rem', display:'flex', justifyContent:'space-between', alignItems:'center'}}>
-            <div>
-                <div style={{ fontSize:'1.25rem', fontWeight:'600'}}>{props.title}</div>
-                <div style={{ fontSize:'1.1rem'}}>{props.desc}</div>
+export default function Achievement(props) {
+
+    const [showDialog, setShowDialog] = useState(false);
+
+    const closeDialog = () => {
+        setShowDialog(false);
+    }
+
+    return (
+        <>
+
+            {showDialog && <PopupDialog imgurl={props.imgurl} closeDialog={closeDialog} />}
+
+            <div className="rect">
+                <div className="postdata">
+                    <div className='post' >{props.title}</div>
+                    <div className='data'>{props.desc}</div>
+                </div>
+
+                <Button onClick={setShowDialog} text='Certificate'/>
+
             </div>
-            
-            <Button text='Certificate'/>
-            
-        </div>
-        
+
+        </>
+
+
     )
 }
 
-// npx create-react-app reactapp

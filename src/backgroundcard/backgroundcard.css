@@ -1,0 +1,29 @@
+.bgwhite{
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+    line-height: 1.825rem; 
+    width: 38vw;
+}
+.institute{
+    font-size: 1.3rem; 
+    font-weight: 500;
+}
+.val{
+    font-size: 1.13rem;
+}
+
+
+@media screen and (max-width:800px) {
+    .bgwhite{
+        width: 48vw;
+    }
+    
+}
+
+
+@media screen and (max-width: 480px) {
+    .bgwhite{
+        width: 54vw;
+    }
+    
+}

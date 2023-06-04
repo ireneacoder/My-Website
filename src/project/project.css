@@ -16,6 +16,24 @@
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
-
+    
+}
+.cover1{
+    display: none;
 }
 
+@media screen and (max-width: 800px){
+    .cover1{
+        height: 20rem;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        display: block;
+    }
+    .cover{
+        display: none;
+    }
+    
+}

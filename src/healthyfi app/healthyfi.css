@@ -20,6 +20,7 @@
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
 }
+
 .subheading{
 
     font-size: 1.5rem;
@@ -34,18 +35,18 @@
     padding: 1rem;
     margin-top: 1rem;
     display: flex;
-    /* justify-content: space-between; */
     margin-left: 0.6rem;
+    margin-bottom: 1.625rem;
     
 }
 .flex{
     display: flex;
-    justify-content: space-between;
-    padding: 1rem;
+    justify-content: center;
+    /* padding: 1.125rem; */
    
 }
 .subsection{
-    width: 16rem;
+    width: 18vw;
     border-left: 0.2rem;
     border-style: solid;
     border-color: #4451B1;
@@ -62,16 +63,13 @@
 }
 .points{
     background-color: #F4FBFF;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 1.325rem;
     margin-top: 0.5rem;
-    /* padding-top: 1rem; */
-    /* padding-bottom: 1rem; */
     display: flex ;
     align-items: center;
     justify-content: start;
     line-height: 1.25rem;
-    min-height: 3.5rem;
+    /* min-height: 3.5rem; */
 }
 .link{
     margin-right: 12rem;
@@ -117,4 +115,76 @@
     justify-content: center;
     align-items: center;
 }
-/* style={{fontSize:'2.375rem', color:'#4451B1', fontWeight:'600', marginTop:'-4rem'}} */
+.long{
+    width: 2.625rem;
+}
+
+@media screen and (max-width:800px){
+    .line{
+        margin-left: 8%;
+        margin-right: 8%;
+        padding-left: 2rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+    .headings{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .end{
+        font-size: 1.625rem;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .subend{
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-top: 0.625rem;
+    }
+    
+    .subsection{
+        width: 30vw;
+        padding: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .subheading{
+        font-size: 1.1rem;
+    }
+    .points{
+        padding: 1rem;
+        line-height: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .line{
+        padding-left: 1.625rem;
+    }
+    .end{
+        font-size: 1.425rem;
+    }
+    .subsection{
+        width: 50vw;
+        margin-top: 2.625rem;
+    }
+    .marginbox{
+        padding: 0.625rem;
+        margin-left: 0.1rem;
+        margin-bottom: 0.825rem;
+    }
+    .flex{
+        padding: 0.005rem;   
+    }
+    .points{
+        padding: 1rem;
+        line-height: 1.5rem;
+    }
+    .long{
+        width: 4.625rem;
+    }
+
+}

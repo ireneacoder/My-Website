@@ -1,34 +1,22 @@
 .table{
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     column-gap: 0.625rem;
     row-gap: 0.625rem;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    /* margin-right: auto;
+    /* padding-top: 6rem;
+    padding-bottom: 6rem; */
+    margin-right: auto;
     margin-left: auto;
-    max-width: 78vw; */
-    padding-right: 10rem;
-    padding-left: 10rem;
+    max-width: 78vw;
+    /* padding-right: 10rem;
+    padding-left: 10rem; */
+    font-size: 1.325rem;
+    line-height: 1.4rem;
 
     /* margin: 6rem 10rem 6rem 10rem; */
 }
-
-@media screen and (max-width: 800px){
-    .table{
-        margin-right: 5rem;
-        margin-left: 5rem;  
-    }         
-}
-@media screen and (max-width: 520px){
-    .table{
-        margin-right: 1rem;
-        margin-left: 1rem;  
-        row-gap: 0.4rem;
-        column-gap: 0.4rem;
-    }         
-}
-
 .intersection{
 
     background-color: #F4F5FE;
@@ -37,6 +25,8 @@
     justify-content: center;
     align-items: center; 
     transition: all 200ms ease-in-out;  
+    font-weight: 500;
+    
 }
 
 .intersection:hover{
@@ -44,3 +34,23 @@
     transform:scale(1.02);
     color:#ffffff;
 }
+
+@media screen and (max-width: 800px){
+    .table{
+        margin-right: 4rem;
+        margin-left: 4rem;  
+        font-size: 1.1rem;
+        max-width: 84vw;
+    }         
+}
+@media screen and (max-width: 480px){
+    .table{
+        margin-right: 8%;
+        margin-left: 8%;  
+        row-gap: 0.4rem;
+        column-gap: 0.4rem;
+        font-size: 0.725rem;
+    } 
+            
+}
+

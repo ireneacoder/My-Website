@@ -9,7 +9,7 @@ export default function Healthyfi()
     return(
         <div>           
             <div>
-                <Banner color='#F5E8FF' img='./healthyfi.png'/>
+                <Banner color='#F5E8FF' img='./cover.png'/>
                 
             </div>
             <div> 
@@ -87,22 +87,22 @@ export default function Healthyfi()
                 <p>This the main and considered to be mostly used section of the App. This shows all the assigned exercise with the details of it. The main problem which is focused in this section is-</p>
                 
                 <div className='points'> 
-                    <div style={{width:'2rem'}}> 💡</div> 
+                    <div className='long'> 💡</div> 
                     <div> User should know before-hand about the requirements of the props in particular exercise.</div>
                 </div>
 
                 <div className='points'> 
-                    <div style={{width:'2rem'}}> 💡</div> 
+                    <div  className='long'> 💡</div> 
                     <div> Along with video, the written steps should be provided for the convenience of user.</div>
                 </div>
 
                 <div className='points'> 
-                    <div style={{width:'2rem'}}> 💡</div> 
+                    <div className='long'> 💡</div> 
                     <div> The option timer helps the user as they do not have to focus on other electrical devices for purpose of time recording. </div>
                 </div>
 
                 <div className='points'> 
-                    <div style={{width:'2rem'}}> 💡</div> 
+                    <div className='long'> 💡</div>  
                     <div> Along with this, the user is provided with the option of recording his/her video, which can be sent to the doctor directly to get it checked if it is correct way. </div>
                 </div>
 

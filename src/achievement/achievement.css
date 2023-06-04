@@ -1,0 +1,28 @@
+.post{
+    font-size: 1.25rem; 
+    font-weight: 600;
+}
+.data{
+    font-size: 1.1rem;
+    
+}
+.rect{
+    background-color: #F6F7FF;
+    border-left: 0.3rem solid #4451B1;
+    padding: 1.625rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+@media screen and (max-width: 480px) {
+    .rect{
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 2rem;
+    }
+    .postdata{
+        margin-bottom: 1.425rem;
+    }
+}

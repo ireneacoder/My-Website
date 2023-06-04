@@ -1,5 +1,61 @@
-.row{
+
+.s{
+    padding: 3rem;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    width: 40vw;
+}
+
+.rows{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content:flex-start;
+}
+.msg{
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+.planpic{
+    width: 22rem;
+}
+
+@media screen and (max-width: 800px){
+    p.msg {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .s{
+        padding: 1.005rem;
+        width: 26rem;
+    }
+    .rows{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .planpic{
+        width: 26rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .rows{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+    }
+    .s{
+        padding-left: 4.825rem;
+        padding-top: 0rem ;
+        width: 100vw;
+    }
+    .planpic{
+        width: 21rem;
+    }
+    p.msg {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
