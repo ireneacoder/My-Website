@@ -8,11 +8,11 @@
 .line{
     
     border-left: 0.1rem;
-    border-color: #4451B1;
     border-style: solid;
     border-right: none;
     border-top: none;
     border-bottom: none;
+    border-color: #4451B1;
     margin-right: 12rem;
     margin-left: 12rem;
     margin-bottom: 6rem;
