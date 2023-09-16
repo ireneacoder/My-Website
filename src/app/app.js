@@ -11,7 +11,7 @@ import Project from '../project/projects';
 import Healthyfi from '../healthyfi app/healthyfi';
 import { SiGmail, SiNotion, SiLinkedin, SiInstagram, SiGithub } from "react-icons/si";
 import Button from '../button/button';
-import MyResume from './RESUME.pdf'
+import MyResume from './Resume.pdf'
 import { useState } from 'react';
 import PopupDialog from '../PopupDialog/PopupDialog';
 
@@ -76,6 +76,8 @@ export default function App() {
                     <Container text='Figma' />
                     <Container text='Adobe Illustrator' />
                     <Container text='Basic RESTful APIs' />
+                    <Container text='SQL' />
+                    <Container text='Flask' />
                     {/* <Container text='DSA/OOPs'/> */}
                 </div>
 
@@ -94,11 +96,11 @@ export default function App() {
                     <div className='head'>Experience</div>
                     <Education institute='Floxus' board='Internship' degree='UI/UX Designer' gpa='2 years' year='It is an ED-TECH company, my role here was to design posters, brochures and UI for the websites.' />
                     <div className='gap'></div>
-                    <Education institute='Gigzoe' board='Internship' degree='Graphics Designer' gpa='2 months' year='It is a company which provides platform to user to find jobs and develop their skills,my role here was to design posters, and thumbnails for blogs' />
+                    <Education institute='Razespace' board='Internship' degree='Graphics and UI/UX Designer' gpa='2 months' year='it is a startup focusing on providing a platform to college students for event registration and finding sponsors.' />
                     <div className='gap' ></div>
-                    <Education institute='metashape.ai' board='Internship' degree='UI/UX Designer' gpa='6 months' year='It is a AI/ML based company which solves user problems using AI. My role here was to design website for the company and posters for social media.' />
+                    <Education institute='metashape.ai' board='Internship' degree='Frontend Developer' gpa='6 months' year='It is a AI/ML based company which solves user problems using AI. My role here was to design website for the company and posters for social media.' />
                     <div className='gap'></div>
-                    <Education institute='FoodStartt' board='Internship' degree='Graphics Designer' gpa='3 months' year='It is a company which sells the leftover foods in the restaurants to needy by offering some offers. My role here was to design the pamphlets and social media posters.' />
+                    <Education institute='dhart-E' board='Internship' degree='UI/UX Designer' gpa='4 months' year='It is a subsidiary company of cron.ai which focuses on building electric vehicles targeting delivery companies' />
                     <div className='gap'></div>
                     <Education institute='Statistical Study on Slope of Line for Data Related to Height-Weight and Covid Infections and Recoveries' board='Research Intern' degree='Under Dr. Soubhik Chakraborty' gpa='Birla Institute of Technology' year='Worked on the  selected topic to analyse the behaviour of straight line when its parameters are input from probability density' />
                 </div>
@@ -108,7 +110,7 @@ export default function App() {
                 <Heading heading='Achievements' />
                 <div>
                     <Achievement imgurl={'certificate-to-be-issued.jpeg'} title='Joint President' desc='The Literary Society, BIT Mesra' />
-                    <Achievement imgurl={'certificate.jpeg'} title='TOP 10 Finalist' desc='48Hrs Hackathon, Penthara Technologies' />
+                    <Achievement imgurl={'certificate.jpeg'} title='Placed in TOP 10 Finalist' desc='48Hrs UI/UX Designing Hackathon, Penthara Technologies' />
                 </div>
 
             </div>
@@ -119,6 +121,10 @@ export default function App() {
                 <div>
                     <Project color='#F5E8FF' img='./healthyfi.png' link='/healthyfi' imgsqr='./cover2 (tab).png' />
                     <Project color='#E1F4FF' img='./startex.png' link='/startex' imgsqr='./cover (tab).png' />
+                    <Project color='#E3F7D7' img='./cued.png' link='/cued' imgsqr='./cover3 (tab).png' />
+                    <Project color='#FFF3D3' img='./dharte.png' link='/dhartE' imgsqr='./cover4 (tab).png' />
+                    <Project color='#FFE5DC' img='./library.png' link='https://github.com/ireneacoder/Library-Management-System' imgsqr='./cover5 (tab).png' />
+                    
                 </div>
 
 
