@@ -7,7 +7,7 @@ export default function Startex()
 {
     return(
         <div>
-            <div><Banner color='#E1F4FF'img='./cover (1).png'/></div>
+            <div><Banner color='#E1F4FF' img='./startex_lo.png'/></div>
 
             <div>
                 <Table title='Assigned Project (Solo)' role=' UI/UX Designer' duration='1.5 Months' tool=' Figma'/> 

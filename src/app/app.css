@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .image{
     background-image: url('../../public/image.png');
@@ -73,6 +76,8 @@
     align-items: center;
     width: 15rem;
     text-decoration: none;
+
+    transition: transform 200ms;
     
 }
 
@@ -298,6 +303,46 @@
         height:2.425rem;
         width: 2.425rem;
     }
+}
+
+.grid-toggle{
+    height: 2.5rem;
+    width: 10rem;
+
+    color: #BBBBBB;
+
+    transition: all 200ms ease-out;
+
+    font-weight: 600;
+
+    user-select: none;
+
+    outline: none;
+}
+
+.grid-toggle:hover{
+    color: #4451B1;
+    background-color: #F9F9F9;
+}
+
+.grid-toggle::before{
+    
+    content: "";
+
+    position: absolute;
+    margin-top: 2rem;
+
+    height: 1.5px;
+    width: 0em;
+
+    background-color: #4451B1;
+
+    transition: all 200ms ease-out;
+
+}
+
+.grid-toggle:hover::before{
+    width: 10em;
 }
 
 @media screen and (max-width: 480px){

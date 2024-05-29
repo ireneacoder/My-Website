@@ -9,7 +9,7 @@ export default function Healthyfi()
     return(
         <div>           
             <div>
-                <Banner color='#F5E8FF' img='./cover tab(health).png'/>
+                <Banner color='#F5E8FF' img='./healthyfi_lo_quality.png'/>
                 
             </div>
             <div> 
