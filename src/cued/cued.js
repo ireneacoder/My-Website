@@ -6,7 +6,7 @@ export default function Cued(){
     return(
         <div>           
             <div>
-                <Banner color='#E3F7D7' img='./cuedtab.png'/>
+                <Banner color='#E3F7D7' img='./cued_lo.png'/>
                 
             </div>
             <div> 

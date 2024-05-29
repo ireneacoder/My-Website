@@ -12,18 +12,28 @@ import Healthyfi from '../healthyfi app/healthyfi';
 import { SiGmail, SiNotion, SiLinkedin, SiInstagram, SiGithub } from "react-icons/si";
 import Button from '../button/button';
 import MyResume from './Resume.pdf'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import PopupDialog from '../PopupDialog/PopupDialog';
 
 
 export default function App() {
 
+    const [gridToggle, setGridToggle] = useState(false)
 
+    useEffect(() => {
+      
+        window.addEventListener("resize", ()=>{
+            if(window.innerWidth < 1024){
+                setGridToggle(false)
+            }
+        })
+    
+      return () => {}
+    }, [])
+    
 
     return (
         <>
-
-
             <Nav />
             <div className='image' >
                 <div className='space'>
@@ -117,18 +127,39 @@ export default function App() {
 
             <div id="project" className='white'>
 
+                
                 <Heading heading='Projects' />
-                <div>
-                    <Project color='#F5E8FF' img='./healthyfi.png' link='/healthyfi' imgsqr='./cover2 (tab).png' />
-                    <Project color='#E1F4FF' img='./startex.png' link='/startex' imgsqr='./cover (tab).png' />
-                    <Project color='#E3F7D7' img='./cued.png' link='/cued' imgsqr='./cover3 (tab).png' />
-                    <Project color='#FFF3D3' img='./dharte.png' link='/dhartE' imgsqr='./cover4 (tab).png' />
-                    <Project color='#FFE5DC' img='./library.png' link='https://github.com/ireneacoder/Library-Management-System' imgsqr='./cover5 (tab).png' />
+
+                <div className='hidden lg:flex justify-start items-center gap-1 mt-10'>
                     
+                    <button onClick={()=>{setGridToggle(false)}} style={{color : !gridToggle&&"#4451B1"}} className='grid-toggle before:ml-[-2.95rem]'>
+                        List View
+                    </button>
+
+                    <div className='h-[2rem] w-[1px] bg-[#ededed]'/>
+
+                    <button onClick={()=>{setGridToggle(true)}} style={{color : gridToggle&&"#4451B1"}} className='grid-toggle before:ml-[-2.80rem]'>
+                        Grid View
+                    </button>
+
                 </div>
 
+                <div className=' hidden lg:block h-[1.5px] w-full bg-[#CECECE]'/>
+
+                <div style={{ gridTemplateColumns : gridToggle?'repeat(2, minmax(0, 1fr))':'repeat(1, minmax(0, 1fr))'}} className=' duration-200 ease-in-out grid gap-3'>
+                    <Project color="#E1F4FF" img='./sciatica_lo.png' imgsqr='./sciatica_lo.png'/>
+                    <Project color='#F5E8FF' img='./dhart-e_lo.png' link='/dhartE' imgsqr='./cover4 (tab).png' />
+                    <Project color='#E2CFFF' img='./healthyfi_lo_quality.png' link='/healthyfi' imgsqr='./cover2 (tab).png' />
+                    <Project color="#EBFFCB" img='./bankflow_lo.png' imgsqr='./bankflow_lo.png'/>
+                    <Project color="#f7d2d0" img='./cron_lo.png' imgsqr='./cron_lo.png'/>                    
+                    <Project color='#FFE5DC' img='./startex_lo.png' link='/startex' imgsqr='./cover (tab).png' />
+                    <Project color='#FFF3D3' img='./cued_lo.png' link='/cued' imgsqr='./cover3 (tab).png' />
+                    <Project color='#E3F7D7' img='./library_lo.png' link='https://github.com/ireneacoder/Library-Management-System' imgsqr='./cover5 (tab).png' />
+
+                </div>
 
             </div>
+
             <div className='white'> <Heading heading='Gallery' />  </div>
             <div className='galleryimage'>
                 <div className="gallery">

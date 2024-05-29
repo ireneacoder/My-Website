@@ -7,7 +7,7 @@ export default function DhartE(){
     return(
         <div>           
             <div>
-                <Banner color='#E3F7D7' img='./cover tab(dharte).png'/>
+                <Banner color='#E3F7D7' img='./dhart-e_lo.png'/>
                 
             </div>
             <div> 

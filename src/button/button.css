@@ -16,7 +16,7 @@
     padding: 1.425rem;
     height: 1.425rem;
     border: none;
-    background-color: #4451B1;
+    background: #4451B1;
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -24,6 +24,7 @@
     text-decoration: none;
     z-index: 1;
     transition: all 400ms ease-in-out;
+    transition-delay: 1s;
     cursor: pointer;
 }
 
