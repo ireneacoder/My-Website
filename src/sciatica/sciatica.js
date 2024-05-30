@@ -57,6 +57,7 @@ export default function Sciatica()
             <div className='line border-l-0'>
                 
                 <div className='uibox '> 
+                
                     <div className='-ml-10'> <img style={{ width:'100%'}} src="./sciatica1.svg" alt="Wireframe of App" /> </div>
                 </div>
 
