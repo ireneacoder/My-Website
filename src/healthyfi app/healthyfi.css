@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .headings{
     margin-right: 12rem;
     margin-left: 12rem;
