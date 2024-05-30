@@ -14,6 +14,8 @@ import Button from '../button/button';
 import MyResume from './Resume.pdf'
 import { useEffect, useState } from 'react';
 import PopupDialog from '../PopupDialog/PopupDialog';
+import Dropdown from '../dropdown/dropdown';
+import ExperienceCard from '../experiencecard/ExperienceCard';
 
 
 export default function App() {
@@ -47,22 +49,30 @@ export default function App() {
                         </p>
 
                         <div className='breif'>
-                            <p>A digital product designer. I’m passionate to provide great experience to users through my design skills.</p>
+                            <p>A digital product designer. I'm passionate to provide great experience to users through my design skills.</p>
                         </div>
 
                         <a className='download' href={MyResume} download={'Resume'} target='_blank'> Download Resume <span style={{ height: '2rem', borderStyle: 'solid', borderWidth: '0.05rem', borderColor: 'white', borderTop: 'none', borderRight: 'none', borderBottom: 'none', marginLeft: '1.25rem', paddingLeft: '0.625rem' }}> <FiDownload className='downicon' /></span> </a>
 
                     </div>
-                    <img src='DP.png' className='dp'/>
+                    <img src='prernaCoverImage.svg' className='dp'/>
                 </div>
             </div>
 
             <div className='white' id='bio'>
 
                 <Heading heading='About' />
-                <div className='division'>
+                <div className='division pb-3'>
                     <p className='para'>I am a student of Mathematics and Computing, a five years dual degree course, from Birla Institute of Technology. During the period of Lockdown I started working on enhancing the skills in field of UI/UX designing and fell in love with this field. I am passionate about designing and want to make a career in same field.</p>
-                    <p className='para'>I approach the problem with user’s point of view and try to give a solution which is streamlined, easy to use and gives user a happy experience. I research on the problem until I get satisfied as a user. I appreciate every little ideas from all sources that I come across. I am a keen learner and keep learning things to improve my projects everyday and enhance user experience.</p>
+                    <p className='para'>I approach the problem with user's point of view and try to give a solution which is streamlined, easy to use and gives user a happy experience. I research on the problem until I get satisfied as a user. I appreciate every little ideas from all sources that I come across. I am a keen learner and keep learning things to improve my projects everyday and enhance user experience.</p>
+
+                    {/* Dropdown */}
+                    <div className='dropdownContainer'>
+                        <Dropdown title={'Integrated Masters'} institute={'Birla Institute of Technology, Mesra'} degree={'Integrated Mathematics and Computing (BSc. + MSc.)'} score={'8.619/10.00 GPA'} duration={'2019-2024'}/>
+                        <Dropdown title={'Intermediate - (Mathematics)'} institute={'MK DAV Public School'} degree={'Intermediate - Science (Mathematics) CBSE'} score={'83/100 Percentage'} duration={'2019'}/>
+                        <Dropdown title={'Matriculation'} institute={'MK DAV Public School'} degree={'Matriculation CBSE'} score={'10/10 CGPA'} duration={'2017'}/>
+                    </div>
+                    
                 </div>
 
             </div>
@@ -72,38 +82,48 @@ export default function App() {
                 <Heading heading='Skills' />
 
                 <div className='horizontal'>
-                    <Container text='User Interface Designer' />
-                    <Container text='User Experience Designer' />
+                    <Container text='User Interface Design' />
+                    <Container text='User Experience Design' />
                     <Container text='User Experience Research' />
                     <Container text='Prototyping' />
                     <Container text='Wireframing' />
                     <Container text='Poster Designing' />
                     <Container text='HTML' />
                     <Container text='CSS' />
-                    <Container text='ReactJs' />
                     <Container text='JavaScript' />
-                    <Container text='ExpressJs' />
+                    <Container text='ReactJs' />
+                    {/* <Container text='ExpressJs' /> */}
                     <Container text='Figma' />
-                    <Container text='Adobe Illustrator' />
-                    <Container text='Basic RESTful APIs' />
+                    <Container text='Adobe XD' />
+                    {/* <Container text='Basic RESTful APIs' /> */}
                     <Container text='SQL' />
-                    <Container text='Flask' />
+                    {/* <Container text='Flask' /> */}
                     {/* <Container text='DSA/OOPs'/> */}
                 </div>
 
             </div>
-            <div className='white'>
+            
+            <img className=' -z-10' width={'100%'} src={'/waveBackground.svg'} alt='purple wave'/>
 
-                <Heading heading='Background' />
-                <div className='bg'>
-                    <div className='head'>Education</div>
-                    <Education institute='Birla Institute of Technology, Mesra' degree='Integrated Mathematics and Computing (BSc.+MSc.)' gpa='8.68/10.00 GPA' year='2019-2024 (Expected)' />
-                    <div className='gap'></div>
-                    <Education institute='MK DAV Public School' board='Central Board of Secondary Education' degree='Intermediate - Science (Mathematics)' gpa='83/100 Percentage' year='2019' />
-                    <div className='gap'></div>
-                    <Education institute='MK DAV Public School' board='Central Board of Secondary Education' degree='Matriculation' gpa='10/10 CGPA' year='2017' />
+            {/* <div className=' z-10 flex flex-col justify-start gap-4 sm:gap-5 mb-[8rem] mx-[8%] md:mx-[18%] -mt-[4rem] sm:-mt-[10rem] lg:-mt-[14rem] h-[30rem]'> */}
+            <div className='white flex flex-col justify-start gap-4 sm:gap-5 -mt-[3.5rem] sm:-mt-[10rem] lg:-mt-[14rem]'>
 
-                    <div className='head'>Experience</div>
+                <div className=' text-4xl sm:text-5xl md:text-6xl font-bold text-white select-none'>
+                    Experience
+                </div>
+                
+                <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3'>
+                    <ExperienceCard/>
+                    <ExperienceCard org='Cron AI' location='Remote' description='CRON AI develops software for precise 3D object detection and tracking.'/>
+                    <ExperienceCard org='Metashape.io' location='Remote' designation='Frontend Developer' duration='11 months' description='MetaShape.ai develops AI software to automate business processes.'/>
+                    <ExperienceCard org='Floxus' duration='2 years' location='Remote' description='Floxus goal is innovating education with the help of technology.'/>
+                    <ExperienceCard org='Statistical Study on Slope of a Line' type='Research Paper' location='' duration='' designation='' empType='' description='Analysed the behaviour of straight line when its parameters are input from probability density. Guide: Dr. Soubhik Chakraborty '/>
+                    <ExperienceCard org='ARIMA vs. Fourier for Climate Forecasting' type='Research Paper' location='' duration='' designation='' empType='' description='Compared models: ARIMA better for temperature and humidity, Fourier for pressure in climate forecasting. Guide: Dr. Soubhik Chakraborty'/>
+                </div>
+
+            </div>
+
+                    {/* <div className='head'>Experience</div>
                     <Education institute='Floxus' board='Internship' degree='UI/UX Designer' gpa='2 years' year='It is an ED-TECH company, my role here was to design posters, brochures and UI for the websites.' />
                     <div className='gap'></div>
                     <Education institute='Razespace' board='Internship' degree='Graphics and UI/UX Designer' gpa='2 months' year='it is a startup focusing on providing a platform to college students for event registration and finding sponsors.' />
@@ -112,9 +132,8 @@ export default function App() {
                     <div className='gap'></div>
                     <Education institute='dhart-E' board='Internship' degree='UI/UX Designer' gpa='4 months' year='It is a subsidiary company of cron.ai which focuses on building electric vehicles targeting delivery companies' />
                     <div className='gap'></div>
-                    <Education institute='Statistical Study on Slope of Line for Data Related to Height-Weight and Covid Infections and Recoveries' board='Research Intern' degree='Under Dr. Soubhik Chakraborty' gpa='Birla Institute of Technology' year='Worked on the  selected topic to analyse the behaviour of straight line when its parameters are input from probability density' />
-                </div>
-            </div>
+                    <Education institute='Statistical Study on Slope of Line for Data Related to Height-Weight and Covid Infections and Recoveries' board='Research Intern' degree='Under Dr. Soubhik Chakraborty' gpa='Birla Institute of Technology' year='Worked on the  selected topic to analyse the behaviour of straight line when its parameters are input from probability density' /> */}
+
             <div className='white'>
 
                 <Heading heading='Achievements' />
@@ -136,7 +155,7 @@ export default function App() {
                         List View
                     </button>
 
-                    <div className='h-[2rem] w-[1px] bg-[#ededed]'/>
+                    <div className='h-[2rem] w-[2px] bg-[#ededed]'/>
 
                     <button onClick={()=>{setGridToggle(true)}} style={{color : gridToggle&&"#4451B1"}} className='grid-toggle before:ml-[-2.80rem]'>
                         Grid View
@@ -144,7 +163,7 @@ export default function App() {
 
                 </div>
 
-                <div className=' hidden lg:block h-[1.5px] w-full bg-[#CECECE]'/>
+                <div className=' hidden lg:block h-[2px] w-full bg-[#CECECE]'/>
 
                 <div style={{ gridTemplateColumns : gridToggle?'repeat(2, minmax(0, 1fr))':'repeat(1, minmax(0, 1fr))'}} className=' duration-200 ease-in-out grid gap-3'>
                     <Project color="#E1F4FF" img='./sciatica_lo.png' imgsqr='./sciatica_lo.png'/>

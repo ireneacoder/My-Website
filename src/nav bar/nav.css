@@ -19,7 +19,11 @@
     align-items: center;
     color: white;
     margin-top: 6rem;
-    
+    text-decoration: none;
+}
+
+.cutt:hover{
+    color: white;
 }
 
 .navbutton{
