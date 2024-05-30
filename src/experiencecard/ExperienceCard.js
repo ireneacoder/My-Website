@@ -4,7 +4,7 @@ export default function ExperienceCard({org="Fixhealth", empType="Internship", t
     return(
 
         // Card
-        <div className=' w-full min-h-[12rem] border border-[rgba(188,188,188,1)] p-3 bg-white select-none hover:scale-[1.02] ease-in-out duration-150 overflow-hidden'>
+        <div className=' w-full min-h-[12rem] border border-[rgba(188,188,188,1)] px-3 py-4 bg-white select-none hover:scale-[1.02] ease-in-out duration-150 overflow-hidden'>
 
             {/* Org, employment type and type */}
             <div className='flex justify-between items-start w-full'>
@@ -26,7 +26,7 @@ export default function ExperienceCard({org="Fixhealth", empType="Internship", t
             </div>
 
             {/* Designation, duration and location */}
-            <div className='flex justify-between items-start mt-2'>
+            <div className='flex justify-between items-center mt-2'>
 
                 {/* Designation */}
                 <div className='font-semibold text-xs lg:text-base'>{designation}</div>
