@@ -16,11 +16,13 @@ import { useEffect, useState } from 'react';
 import PopupDialog from '../PopupDialog/PopupDialog';
 import Dropdown from '../dropdown/dropdown';
 import ExperienceCard from '../experiencecard/ExperienceCard';
+import { useParallax } from 'react-scroll-parallax';
 
 
 export default function App() {
 
     const [gridToggle, setGridToggle] = useState(false)
+    const [parallaxToggle, setParallax] = useState('HD')
 
     useEffect(() => {
       
@@ -28,11 +30,33 @@ export default function App() {
             if(window.innerWidth < 1024){
                 setGridToggle(false)
             }
+            if(window.innerWidth < 768){
+                setParallax(768)
+            }
+            else if (window.innerWidth < 1280){
+                setParallax(1280)
+            }
+            else{
+                setParallax('HD')
+            }
         })
+
+        if(window.innerWidth < 768){
+            setParallax(768)
+        }
+        else if (window.innerWidth < 1280){
+            setParallax(1280)
+        }
+        else{
+            setParallax('HD')
+        }
     
       return () => {}
     }, [])
     
+    const parallax = useParallax({
+        speed: parallaxToggle === 768? -4: parallaxToggle === 1280? -7: -10,
+    });
 
     return (
         <>
@@ -103,16 +127,17 @@ export default function App() {
 
             </div>
             
-            <img className=' -z-10' width={'100%'} src={'/waveBackground.svg'} alt='purple wave'/>
+            <img  className=' -z-10' width={'100%'} src={'/waveBackground.svg'} alt='purple wave'/>
+            
 
             {/* <div className=' z-10 flex flex-col justify-start gap-4 sm:gap-5 mb-[8rem] mx-[8%] md:mx-[18%] -mt-[4rem] sm:-mt-[10rem] lg:-mt-[14rem] h-[30rem]'> */}
-            <div className='white flex flex-col justify-start gap-4 sm:gap-5 -mt-[3.5rem] sm:-mt-[10rem] lg:-mt-[14rem]'>
+            <div ref={parallax.ref} className='z-10 white bg-none flex flex-col justify-start gap-4 sm:gap-5 -mt-[3.5rem] sm:-mt-[10rem] lg:-mt-[14rem]'>
 
                 <div className=' text-4xl sm:text-5xl md:text-6xl font-bold text-white select-none'>
                     Experience
                 </div>
                 
-                <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3'>
+                <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 duration-150'>
                     <ExperienceCard/>
                     <ExperienceCard org='Cron AI' location='Remote' description='CRON AI develops software for precise 3D object detection and tracking.'/>
                     <ExperienceCard org='Metashape.io' location='Remote' designation='Frontend Developer' duration='11 months' description='MetaShape.ai develops AI software to automate business processes.'/>
@@ -122,17 +147,6 @@ export default function App() {
                 </div>
 
             </div>
-
-                    {/* <div className='head'>Experience</div>
-                    <Education institute='Floxus' board='Internship' degree='UI/UX Designer' gpa='2 years' year='It is an ED-TECH company, my role here was to design posters, brochures and UI for the websites.' />
-                    <div className='gap'></div>
-                    <Education institute='Razespace' board='Internship' degree='Graphics and UI/UX Designer' gpa='2 months' year='it is a startup focusing on providing a platform to college students for event registration and finding sponsors.' />
-                    <div className='gap' ></div>
-                    <Education institute='metashape.ai' board='Internship' degree='Frontend Developer' gpa='6 months' year='It is a AI/ML based company which solves user problems using AI. My role here was to design website for the company and posters for social media.' />
-                    <div className='gap'></div>
-                    <Education institute='dhart-E' board='Internship' degree='UI/UX Designer' gpa='4 months' year='It is a subsidiary company of cron.ai which focuses on building electric vehicles targeting delivery companies' />
-                    <div className='gap'></div>
-                    <Education institute='Statistical Study on Slope of Line for Data Related to Height-Weight and Covid Infections and Recoveries' board='Research Intern' degree='Under Dr. Soubhik Chakraborty' gpa='Birla Institute of Technology' year='Worked on the  selected topic to analyse the behaviour of straight line when its parameters are input from probability density' /> */}
 
             <div className='white'>
 
