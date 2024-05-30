@@ -180,7 +180,7 @@ export default function App() {
                 <div className=' hidden lg:block h-[2px] w-full bg-[#CECECE]'/>
 
                 <div style={{ gridTemplateColumns : gridToggle?'repeat(2, minmax(0, 1fr))':'repeat(1, minmax(0, 1fr))'}} className=' duration-200 ease-in-out grid gap-3'>
-                    <Project color="#E1F4FF" img='./sciatica_lo.png' imgsqr='./sciatica_lo.png'/>
+                    <Project color="#E1F4FF" img='./sciatica_lo.png' link='/sciatica' imgsqr='./sciatica_lo.png'/>
                     <Project color='#F5E8FF' img='./dhart-e_lo.png' link='/dhartE' imgsqr='./cover4 (tab).png' />
                     <Project color='#E2CFFF' img='./healthyfi_lo_quality.png' link='/healthyfi' imgsqr='./cover2 (tab).png' />
                     <Project color="#EBFFCB" img='./bankflow_lo.png' imgsqr='./bankflow_lo.png'/>
