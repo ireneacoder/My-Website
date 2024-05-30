@@ -16,25 +16,25 @@ export default function Nav() {
             <div className='vertical'>
 
 
-                <div className='cutt ' >
+                <a href='#' className='cutt ' >
                     <FaHome size={28} />
-                    <a className='navbutton' href='#'>Home</a>
-                </div>
+                    <div className='navbutton' >Home</div>
+                </a>
 
-                <div className='cutt '>
+                <a href='#bio' className='cutt '>
                     <FaCopy size={28} />
-                    <a className='navbutton' href='#bio' >Bio</a>
-                </div>
+                    <div className='navbutton' >Bio</div>
+                </a>
 
-                <div className='cutt '>
+                <a href='#project' className='cutt '>
                     <FaProjectDiagram size={28} />
-                    <a className='navbutton' href='#project'>Projects</a>
-                </div>
+                    <div className='navbutton' >Projects</div>
+                </a>
 
-                <div className='cutt contact'>
+                <a href='#contact' className='cutt contact'>
                     <FaIdBadge size={28} />
-                    <a className='navbutton' href='#contact'>Contact</a>
-                </div>
+                    <div className='navbutton' >Contact</div>
+                </a>
 
 
 
