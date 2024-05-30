@@ -9,7 +9,7 @@ export default function Startex()
         <div>
             <div><Banner color='#E1F4FF' img='./startex_lo.png'/></div>
 
-            <div>
+            <div className=' flex justify-center items-center w-full'> 
                 <Table title='Assigned Project (Solo)' role=' UI/UX Designer' duration='1.5 Months' tool=' Figma'/> 
             </div>
 

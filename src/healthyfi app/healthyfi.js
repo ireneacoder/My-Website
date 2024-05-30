@@ -12,7 +12,7 @@ export default function Healthyfi()
                 <Banner color='#F5E8FF' img='./healthyfi_lo_quality.png'/>
                 
             </div>
-            <div> 
+            <div className=' flex justify-center items-center w-full'> 
                 <Table title='Self Assigned Project' role=' UI/UX Designer' duration='2 Months' tool=' Figma'/>
             </div>
 

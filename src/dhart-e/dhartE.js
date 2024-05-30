@@ -10,11 +10,11 @@ export default function DhartE(){
                 <Banner color='#E3F7D7' img='./dhart-e_lo.png'/>
                 
             </div>
-            <div> 
+            <div className=' flex justify-center items-center w-full'> 
                 <Table title='Assigned Project' role=' UI/UX Designer' duration='2 Months' tool=' Figma'/>
             </div>
 
-            <div className='nematoda'>
+            <div className='nematoda mt-5'>
                 <Button text='dhart-E Website' link='https://dhart-e.com/'/>     
              </div> 
 

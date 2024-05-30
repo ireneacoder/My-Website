@@ -9,7 +9,7 @@ export default function Cued(){
                 <Banner color='#E3F7D7' img='./cued_lo.png'/>
                 
             </div>
-            <div> 
+            <div className=' flex justify-center items-center w-full'> 
                 <Table title='Assigned Project' role=' UI/UX Designer' duration='2 Months' tool=' Figma'/>
             </div>
 
