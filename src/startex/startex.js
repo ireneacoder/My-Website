@@ -132,8 +132,16 @@ export default function Startex()
                  </div>
 
 
-                 <div className="headings"> <Heading heading='User Interface Design'/> </div>
-                <div className='line'>
+                <div className="headings"> <Heading heading='User Interface Design'/> </div>
+                <div className='leftSpace'>
+                    <div className='subsection'> About Product Page:</div>
+                    <img src='startex1.png'  width={1400}></img>
+                    <div className='subsection'> Detailed Service Page:</div>
+                    <img src='startex2.png'width={1400}></img>
+                    <div className='subsection'> Blog Page:</div>
+                    <img src='startex3.png'width={1400}></img>
+                </div>
+                {/* <div className='line'>
                     <div className='marginbox'> 
                         <div> <img style={{ width:'100%'}} src="./ui1(startex).png" alt="UI Design of Webpage" /> </div>
                     </div>
@@ -141,7 +149,7 @@ export default function Startex()
                         <div> <img style={{ width:'100%'}} src="./ui2(startex).png" alt="UI Design of Webpage" /> </div>
                     </div>
                     <p> This was the final design for the website for first launch and after sometimes according to the user interaction data the second iteration of this website will be designed. </p>
-                 </div>
+                 </div> */}
                  <Button text='View Figma File' link='https://www.figma.com/file/5DgDawSn492qlkCQ5g0V3E/STARTEX-WEBSITE?type=design&node-id=0%3A1&t=cF7RYuHIqGwqC2Ev-1'/>
                  
                  <div className="headings"> <Heading heading='Beta Testing'/> </div>

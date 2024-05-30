@@ -33,6 +33,11 @@
     font-weight: 500;
 
 }
+.leftSpace{
+    margin-left: 12rem;
+    margin-right: 12rem;
+    margin-bottom: 6rem;
+}
 .marginbox{
 
     background-color: #F4FBFF;
@@ -131,6 +136,10 @@
         padding-left: 2rem;
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
+    }
+    .leftSpace{
+        margin-left: 8%;
+        margin-right: 8%;
     }
     .headings{
         margin-left: 8%;

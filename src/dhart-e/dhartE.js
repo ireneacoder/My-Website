@@ -49,9 +49,11 @@ export default function DhartE(){
 
 
             <div className="headings"> <Heading heading='User Interface Design'/> </div>
-            <div className='line'>
+            <div className='leftSpace'>
                 <div className='subsection'> Website View </div>
-                <div className='marginbox'> 
+                <img src="dhate1.png" width={1400}></img>
+                <img src="dhate2.png" width={1400}></img>
+                {/* <div className='marginbox'> 
                     <div> <img style={{width:'100%'}} src="./ui(dharte).png" alt="Home Page" /> </div>
                 </div>
                 <div className='marginbox'> 
@@ -62,12 +64,14 @@ export default function DhartE(){
                 </div>
                 <div className='marginbox'> 
                     <div> <img style={{width:'100%'}} src="./ui3(dharte).png" alt="Contact Us Page" /> </div>
-                </div>
+                </div> */}
             
             
             
                 <div className='subsection'> Mobile View </div>
-                <div className='marginbox'> 
+                <img src="dhate3.png" width={700}></img>
+                <img src="dhate4.png" width={700}></img>
+                {/* <div className='marginbox'> 
                     <div> <img style={{width:'100%'}} src="./ui4(dharte).png" alt="Home page" /> </div>
                 </div>
                 <div className='marginbox'> 
@@ -78,7 +82,7 @@ export default function DhartE(){
                 </div>
                 <div className='marginbox'> 
                     <div> <img style={{width:'100%'}} src="./ui7(dharte).png" alt="Contact Us Page" /> </div>
-                </div>
+                </div> */}
                 
             </div>
             
