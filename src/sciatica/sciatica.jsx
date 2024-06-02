@@ -56,17 +56,16 @@ export default function Sciatica()
             <div className="headings"> <Heading heading='User Interface Design'/> </div>
             <div className='line border-l-0'>
                 
-                <div className='uibox '> 
-                
+                <div className='uibox '>                
                     <div className='-ml-10'> <img style={{ width:'100%'}} src="./sciatica1.svg" alt="Wireframe of App" /> </div>
                 </div>
 
-                <div className='subsection'>
+                <div className='subsection text-xs sm:text-base'>
                     Other Conditions Pages
                 </div>
 
-                <div className='uibox bg-none'> 
-                    <div className='-ml-10'> <img style={{ width:'100%'}} src="./sciatica2.svg" alt="App" /> </div>
+                <div className='uibox bg-[rgba(244,251,255,1)] '> 
+                    <div className=''> <img style={{ width:'100%'}} src="./sciatica2.svg" alt="App" /> </div>
                 </div>
 
                 <p>
