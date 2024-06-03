@@ -183,7 +183,7 @@ export default function App() {
                     <Project color="#E1F4FF" img='./sciatica_lo.png' link='/sciatica' imgsqr='./sciatica_lo.png'/>
                     <Project color='#F5E8FF' img='./dhart-e_lo.png' link='/dhartE' imgsqr='./cover4 (tab).png' />
                     <Project color='#E2CFFF' img='./healthyfi_lo_quality.png' link='/healthyfi' imgsqr='./cover2 (tab).png' />
-                    <Project color="#EBFFCB" img='./bankflow_lo.png' imgsqr='./bankflow_lo.png'/>
+                    <Project color="#EBFFCB" img='./bankflow_lo.png' link='/bankflow' imgsqr='./bankflow_lo.png'/>
                     <Project color="#f7d2d0" img='./cron_lo.png' imgsqr='./cron_lo.png'/>                    
                     <Project color='#FFE5DC' img='./startex_lo.png' link='/startex' imgsqr='./cover (tab).png' />
                     <Project color='#FFF3D3' img='./cued_lo.png' link='/cued' imgsqr='./cover3 (tab).png' />

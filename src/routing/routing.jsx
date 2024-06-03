@@ -6,6 +6,7 @@ import Startex from "../startex/startex"
 import Cued from "../cued/cued"
 import DhartE from "../dhart-e/dhartE"
 import Sciatica from "../sciatica/sciatica"
+import BankFlow from "../bankflow/bankflow"
 export default function Routing()
 {
     return(
@@ -18,6 +19,7 @@ export default function Routing()
                     <Route exact path='/cued' element={<Cued/>}></Route>
                     <Route exact path = '/dhartE' element={<DhartE/>}></Route>
                     <Route exact path = '/sciatica' element={<Sciatica/>}></Route>
+                    <Route exact path = '/bankflow' element={<BankFlow/>}></Route>
                 </Routes>
             </Router>
         </div>
