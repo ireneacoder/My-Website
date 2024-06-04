@@ -7,6 +7,7 @@ import Cued from "../cued/cued"
 import DhartE from "../dhart-e/dhartE"
 import Sciatica from "../sciatica/sciatica"
 import BankFlow from "../bankflow/bankflow"
+import CronAI from "../cronai/cronai"
 export default function Routing()
 {
     return(
@@ -20,6 +21,7 @@ export default function Routing()
                     <Route exact path = '/dhartE' element={<DhartE/>}></Route>
                     <Route exact path = '/sciatica' element={<Sciatica/>}></Route>
                     <Route exact path = '/bankflow' element={<BankFlow/>}></Route>
+                    <Route exact path = '/cronai' element={<CronAI/>}></Route>
                 </Routes>
             </Router>
         </div>
