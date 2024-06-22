@@ -4,21 +4,29 @@ import Heading from "../heading/heading"
 import Banner from "../banner/banner"
 import Table from "../table/table"
 import Button from '../button/button'
+import Overview from '../overview/Overview'
 export default function Sciatica()
 {
     return(
-        <div>           
+        <div className=' overflow-x-hidden'>           
             <div>
                 <Banner color='#E1F4FF' img='./sciatica_lo.png'/>
                 
             </div>
-            <div className=' flex justify-center items-center w-full'> 
+            
+            {/* <div className=' flex justify-center items-center w-full'> 
                 <Table title='Self Assigned Project' role=' UI/UX Designer' duration='1 Month' tool=' Figma'/>
-            </div>
+            </div> */}
 
-            <div className='mt-[4rem] flex justify-center items-center'>
-                <Button text='Sciatica Page' link='https://www.fixhealth.com/uk/sciatica-treatment' />
+            <div className='headings flex flex-col gap-1 -mt-14'>
+                <Heading heading={'Overview'}/>
+                <Overview type={'Assigned'} duration={'1 Month'} tools={'Figma'} link={'https://www.fixhealth.com/uk/sciatica-treatment'}/>
             </div>
+            
+
+            {/* <div className='mt-[4rem] flex justify-center items-center'>
+                <Button text='Sciatica Page' link='https://www.fixhealth.com/uk/sciatica-treatment' />
+            </div> */}
 
             <div className="headings"> <Heading heading='About Condition Page'/> </div>
             <div className='line'>

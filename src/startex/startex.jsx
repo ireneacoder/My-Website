@@ -3,14 +3,20 @@ import Banner from '../banner/banner'
 import './startex.css'
 import Heading from '../heading/heading'
 import Button from '../button/button'
+import Overview from '../overview/Overview'
 export default function Startex()
 {
     return(
-        <div>
+        <div className=' overflow-x-hidden'>
             <div><Banner color='#E1F4FF' img='./startex_lo.png'/></div>
 
-            <div className=' flex justify-center items-center w-full'> 
+            {/* <div className=' flex justify-center items-center w-full'> 
                 <Table title='Assigned Project (Solo)' role=' UI/UX Designer' duration='1.5 Months' tool=' Figma'/> 
+            </div> */}
+
+            <div className='headings flex flex-col gap-1 -mt-14'>
+                <Heading heading={'Overview'}/>
+                <Overview type={'Assigned'} duration={'1.5 Months'} tools={'Figma'} link={''}/>
             </div>
 
             <div className='headings'> <Heading heading='About StartEx'/> </div>
