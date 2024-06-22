@@ -4,21 +4,27 @@ import Heading from "../heading/heading"
 import Banner from "../banner/banner"
 import Table from "../table/table"
 import Button from '../button/button'
+import Overview from '../overview/Overview'
 export default function CronAI()
 {
     return(
-        <div>           
+        <div className='overflow-x-hidden'>           
             <div>
                 <Banner color='#E1F4FF' img='./bankflow_lo.png'/>
                 
             </div>
-            <div className=' flex justify-center items-center w-full'> 
+            {/* <div className=' flex justify-center items-center w-full'> 
                 <Table title='Assigned' role=' UI/UX Designer' duration='3 Months' tool=' Figma'/>
+            </div> */}
+
+            <div className='headings flex flex-col gap-1 -mt-14'>
+                <Heading heading={'Overview'}/>
+                <Overview type={'Assigned'} duration={'3 Months'} tools={'Figma'} link={'https://cronai.ai/'}/>
             </div>
 
-            <div className='mt-[4rem] flex justify-center items-center'>
+            {/* <div className='mt-[4rem] flex justify-center items-center'>
                 <Button text='Cron.AI Website' link='https://cronai.ai/' />
-            </div>
+            </div> */}
 
             <div className="headings"> <Heading heading='About Cron.AI'/> </div>
             <div className='line'>
