@@ -135,11 +135,11 @@ export default function Startex()
                 <div className="headings"> <Heading heading='User Interface Design'/> </div>
                 <div className='leftSpace'>
                     <div className='subsection'> About Product Page:</div>
-                    <img src='startex1.png'  width={1400}></img>
+                    <img src='startex1.svg'  width={1400}></img>
                     <div className='subsection'> Detailed Service Page:</div>
-                    <img src='startex2.png'width={1400}></img>
+                    <img src='startex2.svg'width={1400}></img>
                     <div className='subsection'> Blog Page:</div>
-                    <img src='startex3.png'width={1400}></img>
+                    <img src='startex3.svg'width={1400}></img>
                 </div>
                 {/* <div className='line'>
                     <div className='marginbox'> 
