@@ -16,7 +16,7 @@ export default function Startex()
 
             <div className='headings flex flex-col gap-1 -mt-14'>
                 <Heading heading={'Overview'}/>
-                <Overview type={'Assigned'} duration={'3 Months'} tools={'Figma'} link={''}/>
+                <Overview type={'Assigned'} duration={'1.5 Months'} tools={'Figma'} link={''}/>
             </div>
 
             <div className='headings'> <Heading heading='About StartEx'/> </div>
