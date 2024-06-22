@@ -87,8 +87,8 @@ export default function App() {
 
                 <Heading heading='About' />
                 <div className='division pb-3'>
-                    <p className='para'>I am a student of Mathematics and Computing, a five years dual degree course, from Birla Institute of Technology. During the period of Lockdown I started working on enhancing the skills in field of UI/UX designing and fell in love with this field. I am passionate about designing and want to make a career in same field.</p>
-                    <p className='para'>I approach the problem with user's point of view and try to give a solution which is streamlined, easy to use and gives user a happy experience. I research on the problem until I get satisfied as a user. I appreciate every little ideas from all sources that I come across. I am a keen learner and keep learning things to improve my projects everyday and enhance user experience.</p>
+                    <p className='para'>I've completed my Bachelors and Masters of Science in Mathematics and Computing, a five year dual degree course, from Birla Institute of Technology, Mesra. I started working on enhancing my skills in field of UI/UX designing during my sophomore year of university. I am passionate about designing and want to have a successful career in this field.</p>
+                    <p className='para'>I approach the problem with user's point of view and try to give a solution which is streamlined, easy to use and gives user a happy experience. I research on the problem until I get satisfied as a user. I appreciate every little ideas from all sources that I come across. I am a keen learner and keep learning new techniques to improve my projects everyday and enhance user interface without compromising the user experience.</p>
 
                     {/* Dropdown */}
                     <div className='dropdownContainer'>
@@ -104,48 +104,50 @@ export default function App() {
             <div id='skills' className='white'>
 
                 <Heading heading='Skills' />
-
-                <div className='horizontal'>
-                    <Container text='User Interface Design' />
-                    <Container text='User Experience Design' />
-                    <Container text='User Experience Research' />
-                    <Container text='Prototyping' />
-                    <Container text='Wireframing' />
-                    <Container text='Poster Designing' />
-                    <Container text='HTML' />
-                    <Container text='CSS' />
-                    <Container text='JavaScript' />
-                    <Container text='ReactJs' />
+        
+                <div className='horizontal justify-center ml-3 sm:justify-start'>
+                    <Container percentage={98} text='User Interface Design' />
+                    <Container percentage={96} text='User Experience Design' />
+                    <Container percentage={90} text='User Experience Research' />
+                    <Container percentage={90} text='Prototyping' />
+                    <Container percentage={94} text='Wireframing' />
+                    <Container percentage={96} text='Poster Designing' />
+                    <Container percentage={80} text='HTML' />
+                    <Container percentage={92} text='CSS' />
+                    <Container percentage={75} text='JavaScript' />
+                    <Container percentage={85} text='ReactJs' />
                     {/* <Container text='ExpressJs' /> */}
-                    <Container text='Figma' />
-                    <Container text='Adobe XD' />
+                    <Container percentage={98} text='Figma' />
+                    <Container percentage={77} text='Adobe XD' />
                     {/* <Container text='Basic RESTful APIs' /> */}
-                    <Container text='SQL' />
+                    <Container percentage={70} text='SQL' />
                     {/* <Container text='Flask' /> */}
                     {/* <Container text='DSA/OOPs'/> */}
                 </div>
 
             </div>
             
-            <img  className=' -z-10' width={'100%'} src={'/waveBackground.svg'} alt='purple wave'/>
-            
-
-            {/* <div className=' z-10 flex flex-col justify-start gap-4 sm:gap-5 mb-[8rem] mx-[8%] md:mx-[18%] -mt-[4rem] sm:-mt-[10rem] lg:-mt-[14rem] h-[30rem]'> */}
-            <div ref={parallax.ref} className='z-10 white bg-none flex flex-col justify-start gap-4 sm:gap-5 -mt-[3.5rem] sm:-mt-[10rem] lg:-mt-[14rem]'>
-
-                <div className=' text-4xl sm:text-5xl md:text-6xl font-bold text-white select-none'>
-                    Experience
-                </div>
+            <div className={`bg-[rgba(68,81,177,1)] sm:bg-transparent pb-1 sm:pb-0`}>
+                <img  className=' -z-10' width={'100%'} src={'/waveBackground.svg'} alt='purple wave'/>
                 
-                <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 duration-150'>
-                    <ExperienceCard/>
-                    <ExperienceCard org='Cron AI' location='Remote' description='CRON AI develops software for precise 3D object detection and tracking.'/>
-                    <ExperienceCard org='Metashape.io' location='Remote' designation='Frontend Developer' duration='11 months' description='MetaShape.ai develops AI software to automate business processes.'/>
-                    <ExperienceCard org='Floxus' duration='2 years' location='Remote' description='Floxus goal is innovating education with the help of technology.'/>
-                    <ExperienceCard org='Statistical Study on Slope of a Line' type='Research Paper' location='' duration='' designation='' empType='' description='Analysed the behaviour of straight line when its parameters are input from probability density. Guide: Dr. Soubhik Chakraborty '/>
-                    <ExperienceCard org='ARIMA vs. Fourier for Climate Forecasting' type='Research Paper' location='' duration='' designation='' empType='' description='Compared models: ARIMA better for temperature and humidity, Fourier for pressure in climate forecasting. Guide: Dr. Soubhik Chakraborty'/>
-                </div>
 
+                {/* <div className=' z-10 flex flex-col justify-start gap-4 sm:gap-5 mb-[8rem] mx-[8%] md:mx-[18%] -mt-[4rem] sm:-mt-[10rem] lg:-mt-[14rem] h-[30rem]'> */}
+                <div ref={parallax.ref} className='z-10 white bg-none flex flex-col justify-start gap-4 sm:gap-5 -mt-[3.5rem] sm:-mt-[10rem] lg:-mt-[14rem]'>
+
+                    <div className=' text-4xl sm:text-5xl md:text-6xl font-bold text-white select-none'>
+                        Experience
+                    </div>
+                    
+                    <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 duration-150'>
+                        <ExperienceCard/>
+                        <ExperienceCard org='Cron AI' location='Remote' description='CRON AI develops software for precise 3D object detection and tracking.'/>
+                        <ExperienceCard org='Metashape.io' location='Remote' designation='Frontend Developer' duration='11 months' description='MetaShape.ai develops AI software to automate business processes.'/>
+                        <ExperienceCard org='Floxus' duration='2 years' location='Remote' description='Floxus goal is innovating education with the help of technology.'/>
+                        <ExperienceCard org='Statistical Study on Slope of a Line' type='Research Paper' location='' duration='' designation='' empType='' description='Analysed the behaviour of straight line when its parameters are input from probability density. Guide: Dr. Soubhik Chakraborty '/>
+                        <ExperienceCard org='ARIMA vs. Fourier for Climate Forecasting' type='Research Paper' location='' duration='' designation='' empType='' description='Compared models: ARIMA better for temperature and humidity, Fourier for pressure in climate forecasting. Guide: Dr. Soubhik Chakraborty'/>
+                    </div>
+
+                </div>
             </div>
 
             <div className='white'>

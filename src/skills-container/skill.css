@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .box{
     margin-right: 1rem;
     /* margin-top: 2rem; */
@@ -12,6 +16,8 @@
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
+    
+    width: 18rem;
 
     user-select: none;
 
@@ -21,4 +27,23 @@
     /* border: none; */
     background-color: #4451B1 ;
     color: #ffffff;
+    transform: scale(1.05);
 }
+
+.box:hover .text{
+    display: none;
+}
+
+.progressBar{
+    transition: clip-path 0.5s ease-in-out;
+    clip-path: inset(0 100% 0 0);
+
+    width: 0rem;
+}
+
+.box:hover .progressBar{
+    clip-path: inset(0 0 0 0);
+    width: 16rem;
+    display: flex;
+}
+
