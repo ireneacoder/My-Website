@@ -5,7 +5,7 @@ import Button from '../button/button'
 import Overview from "../overview/Overview"
 export default function Cued(){
     return(
-        <div>           
+        <div className=" overflow-x-hidden">           
             <div>
                 <Banner color='#E3F7D7' img='./cued_lo.png'/>
                 

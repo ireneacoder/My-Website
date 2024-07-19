@@ -3,20 +3,26 @@ import Heading from "../heading/heading"
 import Banner from "../banner/banner"
 import Table from "../table/table"
 import Button from '../button/button'
+import Overview from "../overview/Overview"
 export default function DhartE(){
     return(
-        <div>           
+        <div className="overflow-x-hidden">           
             <div>
                 <Banner color='#E3F7D7' img='./dhart-e_lo.png'/>
                 
             </div>
-            <div className=' flex justify-center items-center w-full'> 
+            {/* <div className=' flex justify-center items-center w-full'> 
                 <Table title='Assigned Project' role=' UI/UX Designer' duration='2 Months' tool=' Figma'/>
+            </div> */}
+
+            <div className='headings flex flex-col gap-1 -mt-14'>
+                <Heading heading={'Overview'}/>
+                <Overview type={'Assigned'} duration={'2 Months'} tools={'Figma'} link={'https://dhart-e.com/'}/>
             </div>
 
-            <div className='nematoda mt-5'>
+            {/* <div className='nematoda mt-5'>
                 <Button text='dhart-E Website' link='https://dhart-e.com/'/>     
-             </div> 
+            </div>  */}
 
             <div className="headings"> <Heading heading='About dhart-E'/> </div>
             <div className='line'>

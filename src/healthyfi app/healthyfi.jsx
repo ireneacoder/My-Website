@@ -8,7 +8,7 @@ import Overview from '../overview/Overview'
 export default function Healthyfi()
 {
     return(
-        <div>           
+        <div className='overflow-x-hidden'>           
             <div>
                 <Banner color='#F5E8FF' img='./healthyfi_lo_quality.png'/>
                 
