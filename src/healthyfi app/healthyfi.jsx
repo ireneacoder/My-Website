@@ -4,6 +4,7 @@ import Heading from "../heading/heading"
 import Banner from "../banner/banner"
 import Table from "../table/table"
 import Button from '../button/button'
+import Overview from '../overview/Overview'
 export default function Healthyfi()
 {
     return(
@@ -12,8 +13,13 @@ export default function Healthyfi()
                 <Banner color='#F5E8FF' img='./healthyfi_lo_quality.png'/>
                 
             </div>
-            <div className=' flex justify-center items-center w-full'> 
+            {/* <div className=' flex justify-center items-center w-full'> 
                 <Table title='Self Assigned Project' role=' UI/UX Designer' duration='2 Months' tool=' Figma'/>
+            </div> */}
+
+            <div className='headings flex flex-col gap-1 -mt-14'>
+                <Heading heading={'Overview'}/>
+                <Overview type={'Assigned'} duration={'2 Months'} tools={'Figma'} link={''}/>
             </div>
 
             <div className="headings"> <Heading heading='About Healthy-Fi'/> </div>
