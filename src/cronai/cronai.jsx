@@ -10,7 +10,7 @@ export default function CronAI()
     return(
         <div className='overflow-x-hidden'>           
             <div>
-                <Banner color='#E1F4FF' img='./bankflow_lo.png'/>
+                <Banner color='#E1F4FF' img='./cronai-cover.svg'/>
                 
             </div>
             {/* <div className=' flex justify-center items-center w-full'> 
