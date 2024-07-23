@@ -1,6 +1,6 @@
 import './ExperienceCard.css'
 
-export default function ExperienceCard({org="Fixhealth", empType="Internship", type="Website", designation="UI/UX Designer", duration="6 months", location="Bangalore", description="Fix Health provides personalized physiotherapy for pain-free living."}){
+export default function ExperienceCard({org="Fixhealth", empType="Internship", type="Website", designation="UI/UX Designer", duration="6 months", location="Bangalore", description="Fix Health provides personalized physiotherapy for pain-free living.", link="https://www.fixhealth.com/uk"}){
     return(
 
         // Card
@@ -21,7 +21,7 @@ export default function ExperienceCard({org="Fixhealth", empType="Internship", t
                 </div>
 
                 {/* Type */}
-                <div className='flex justify-center items-center min-w-[5rem] px-2 h-[1.25rem] text-xs text-[rgba(68,81,177,1)] bg-[rgba(68,81,177,0.04)]'>{type}</div>
+                <div onClick={()=>{if(link) window.open(link, '_blank')}} className={`flex justify-center items-center min-w-[5rem] px-2 h-[1.25rem] text-xs text-[rgba(68,81,177,1)] bg-[rgba(68,81,177,0.04)] ${link&&'cursor-pointer'}`}>{type}</div>
 
             </div>
 

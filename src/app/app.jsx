@@ -140,11 +140,11 @@ export default function App() {
                     
                     <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 duration-150'>
                         <ExperienceCard/>
-                        <ExperienceCard org='Cron AI' location='Remote' description='CRON AI develops software for precise 3D object detection and tracking.'/>
-                        <ExperienceCard org='Metashape.io' location='Remote' designation='Frontend Developer' duration='11 months' description='MetaShape.ai develops AI software to automate business processes.'/>
-                        <ExperienceCard org='Floxus' duration='2 years' location='Remote' description='Floxus goal is innovating education with the help of technology.'/>
-                        <ExperienceCard org='Statistical Study on Slope of a Line' type='Research Paper' location='' duration='' designation='' empType='' description='Analysed the behaviour of straight line when its parameters are input from probability density. Guide: Dr. Soubhik Chakraborty '/>
-                        <ExperienceCard org='ARIMA vs. Fourier for Climate Forecasting' type='Research Paper' location='' duration='' designation='' empType='' description='Compared models: ARIMA better for temperature and humidity, Fourier for pressure in climate forecasting. Guide: Dr. Soubhik Chakraborty'/>
+                        <ExperienceCard org='Cron AI' location='Remote' description='CRON AI develops software for precise 3D object detection and tracking.' link={'https://cronai.ai/'}/>
+                        <ExperienceCard org='Metashape.ai' location='Remote' designation='Frontend Developer' duration='11 months' description='MetaShape.ai develops AI software to automate business processes.' link={'https://metashape.ai/'}/>
+                        <ExperienceCard org='Floxus' duration='2 years' location='Remote' description='Floxus goal is innovating education with the help of technology.' link={'https://www.floxus.co/'}/>
+                        <ExperienceCard org='Statistical Study on Slope of a Line' type='Research Paper' location='' duration='' designation='' empType='' description='Analysed the behaviour of straight line when its parameters are input from probability density. Guide: Dr. Soubhik Chakraborty ' link={'https://www.onlinescientificresearch.com/articles/a-statistical-study-on-the-slope-of-a-line-for-data-related-to-heightweight-and-covid-infectionsrecoveries.pdf'}/>
+                        <ExperienceCard org='ARIMA vs. Fourier for Climate Forecasting' type='Research Paper' location='' duration='' designation='' empType='' description='Compared models: ARIMA better for temperature and humidity, Fourier for pressure in climate forecasting. Guide: Dr. Soubhik Chakraborty' link={'https://stm.bookpi.org/STRUFP-V8/article/view/15147'}/>
                     </div>
 
                 </div>
